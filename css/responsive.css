@@ -1,0 +1,142 @@
+@media (max-width: 980px) {
+  .nav-toggle {
+    display: grid;
+  }
+
+  .nav-panel {
+    align-items: stretch;
+    background: var(--bg);
+    border-left: 1px solid var(--line);
+    bottom: 0;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 5.5rem 1.2rem 1.2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(102%);
+    transition: transform 0.3s ease;
+    width: min(320px, 84vw);
+    z-index: 99;
+  }
+
+  .nav-panel.open {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+  }
+
+  .theme-toggle {
+    margin-top: 0.5rem;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-grid,
+  .project-card,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-visual {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .skills-grid,
+  .card-grid,
+  .achievement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section {
+    padding: 4.4rem 0;
+  }
+
+  .hero {
+    padding-top: 5rem;
+  }
+
+  .hero-actions,
+  .project-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .stat-grid,
+  .skills-grid,
+  .card-grid,
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-panel {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .about-copy,
+  .experience-card,
+  .contact-form,
+  .contact-info,
+  .project-content {
+    padding: 1.25rem;
+  }
+
+  .project-image {
+    min-height: 300px;
+    padding: 1rem;
+  }
+
+  .timeline-item {
+    gap: 0.75rem;
+    grid-template-columns: 28px 1fr;
+  }
+
+  .timeline::before {
+    left: 13px;
+  }
+
+  .timeline-dot {
+    border-width: 4px;
+    height: 16px;
+    width: 16px;
+  }
+
+  .hero-title {
+    min-height: 4.5rem;
+  }
+
+  .photo-placeholder {
+    width: min(280px, 100%);
+  }
+}
